@@ -12,4 +12,5 @@ module.exports = {
   env: {
     "vue/setup-compiler-macros": true,
   },
+  "max-len": [0, 160, 2, { ignoreUrls: true }],
 };
