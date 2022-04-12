@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import IndexHeader from "./components/IndexHeader.vue";
+import moment from "moment";
+import { ref } from "vue";
+const thisYear = ref(moment().year());
 </script>
 
 <template>
@@ -9,6 +12,10 @@ import IndexHeader from "./components/IndexHeader.vue";
   </header>
 
   <RouterView />
+
+  <footer>
+    <div class="my-6 text-center">©{{ thisYear }} by Leo Lin</div>
+  </footer>
 </template>
 
 <style lang="scss">
