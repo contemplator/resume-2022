@@ -15,7 +15,6 @@ const RouteTitleEnum = {
 watch(
   () => route.name,
   async () => {
-    console.log(route.name);
     let result = "home";
     (<any>Object).entries(RouteTitleEnum).forEach((item: any) => {
       if (item[0] === route.name) result = item[1];
