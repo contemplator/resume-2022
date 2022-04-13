@@ -2,8 +2,33 @@
 import { RouterView } from "vue-router";
 import IndexHeader from "./components/IndexHeader.vue";
 import moment from "moment";
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
 const thisYear = ref(moment().year());
+const route = useRoute();
+const RouteTitleEnum = {
+  home: "Home",
+  experience: "Experience",
+  projects: "Projects",
+  contact: "Contact",
+};
+// watch:{
+//     $route (to, from){
+//         this.show = false;
+//     }
+// }
+watch(
+  () => route.name,
+  async () => {
+    console.log(route.name);
+    let result = "home";
+    (<any>Object).entries(RouteTitleEnum).forEach((item: any) => {
+      if (item[0] === route.name) result = item[1];
+    });
+
+    document.title = result + ' | Leo Lin';
+  }
+);
 </script>
 
 <template>

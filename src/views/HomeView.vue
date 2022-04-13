@@ -20,7 +20,7 @@ import { Icon } from "@iconify/vue";
       </section>
       <section id="experience">
         <div class="text-4xl mt-12 mb-4 uppercase text-center">Experience</div>
-        <div class="text-xl mb-8 text-center">Work History</div>
+        <div class="text-xl mb-8 text-center">Roles & Responsibilities</div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="experience-card">
             <div class="experience-time">2017/11 ~ 2022/02</div>
@@ -114,5 +114,23 @@ import { Icon } from "@iconify/vue";
       color: var(--color-hint);
     }
   }
+}
+.connect-item {
+  @apply flex items-center my-2;
+  Icon {
+    @apply text-2xl;
+  }
+  > .connect-item-value {
+    @apply ml-4 text-xl;
+    :hover {
+      color: var(--color-hint);
+    }
+  }
+}
+img.circle {
+  max-width: 240px;
+  border-radius: 50%;
+  border: 0;
+  margin: 0 auto;
 }
 </style>

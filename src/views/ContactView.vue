@@ -28,7 +28,7 @@ import { Icon } from "@iconify/vue";
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .connect-item {
   @apply flex items-center my-2;
   Icon {

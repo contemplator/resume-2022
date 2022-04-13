@@ -4,7 +4,9 @@ import { RouterLink } from "vue-router";
 
 <template>
   <div class="header max-w-6xl mx-auto flex justify-between items-center my-8">
-    <div id="website-title" class="text-2xl font-medium uppercase">Leo Lin</div>
+    <div id="website-title" class="text-2xl font-medium uppercase">
+      <RouterLink to="/">Leo Lin</RouterLink>
+    </div>
     <div id="navigation" class="flex-1">
       <nav>
         <ul class="flex items-center float-right">

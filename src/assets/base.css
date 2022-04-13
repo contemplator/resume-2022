@@ -60,3 +60,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
+a:hover {
+  color: var(--color-hint);
+}
