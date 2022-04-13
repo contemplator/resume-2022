@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import TheWelcome from "@/components/TheWelcome.vue";
+import { Icon } from "@iconify/vue";
 </script>
 
 <template>
@@ -10,31 +10,17 @@
           <div class="flex-1 personality-content flex justify-center flex-col p-8">
             <div class="name uppercase text-center text-6xl font-bold mb-8">Leo Lin</div>
             <div class="slogon text-center mb-8 text-xl">Explore and Enjoy</div>
-            <div class="description text-center whitespace-normal">
-              I’m thrilled you’re here. Please take a moment to explore my site, where you’ll find details on my background, experience, skills and more. To
-              learn more or connect on an opportunity, don’t hesitate to reach out.
+            <div class="description text-left whitespace-normal px-12">
+              求學時主修資訊管理及數位內容，對於
+              IT、使用者習慣充滿興趣，勇於接受和了解當下流行和剛崛起的事物，偏好任務驅動的方式學習新的事物，訂下預期目標即全力完成。
             </div>
           </div>
           <div class="flex-1 personality-image p-8"></div>
         </div>
       </section>
-      <!-- <section id="personal-profile" class="mt-12">
-        <div class="flex bg-gray-700 section-content">
-          <div class="flex-1 personality-image p-8"></div>
-          <div class="flex-1 personality-content flex justify-center flex-col p-8">
-            <div class="name uppercase text-center text-6xl font-bold mb-8">About</div>
-            <div class="slogon text-center mb-8 text-xl">Personal Profile</div>
-            <div class="description text-center whitespace-normal">
-              Throughout my life, I’ve approached every challenge with enthusiasm, creativity, and ceaseless desire to achieve success. This passion and drive
-              have paved the way to countless opportunities, unique experiences and exceptional relationships both personally and professionally. If you’re
-              interested in learning more about me, keep reading or get in touch.
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section id="experience">
         <div class="text-4xl mt-12 mb-4 uppercase text-center">Experience</div>
-        <div class="text-xl mb-12 text-center">Work History</div>
+        <div class="text-xl mb-8 text-center">Work History</div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="experience-card">
             <div class="experience-time">2017/11 ~ 2022/02</div>
@@ -68,32 +54,27 @@
           </div>
         </div>
       </section>
-      <section id="experience">
-        <div class="text-4xl mt-12 mb-4 uppercase text-center">Projects</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="experience-card">
-            <div class="experience-time">2021-12-01 ~ 2021-12-31</div>
-            <div class="experience-title">ASSOCIATE, VENALEE</div>
-            <div class="experience-content">
-              This is a concise description of your previous work experience and the responsibilities you had. The most effective CVs give a clear snapshot of
-              where you’re coming from and where you’re going in a way that’s easy for readers to scan and absorb quickly.
+      <section>
+        <div class="text-4xl mt-12 mb-4 uppercase text-center">Let's connect</div>
+        <div class="flex bg-gray-700 section-content mt-8">
+          <div class="flex-1 flex justify-center flex-col p-8">
+            <div class="connect-item text-3xl">
+              <Icon icon="eva:email-outline" />
+              <div class="connect-item-value"><a href="mailto:contemplation8213@gmail.com" target="_blank">contemplation8213@gmail.com</a></div>
+            </div>
+            <div class="connect-item text-3xl">
+              <Icon icon="eva:github-fill" />
+              <div class="connect-item-value"><a href="https://github.com/contemplator" target="_blank">github.com/contemplator</a></div>
+            </div>
+            <div class="connect-item text-3xl">
+              <Icon icon="eva:linkedin-fill" />
+              <div class="connect-item-value">
+                <a href="https://www.linkedin.com/in/leolin-48240bb0/" target="_blank">linkedin.com/in/leolin-48240bb0</a>
+              </div>
             </div>
           </div>
-          <div class="experience-card">
-            <div class="experience-time">2021-12-01 ~ 2021-12-31</div>
-            <div class="experience-title">ASSOCIATE, VENALEE</div>
-            <div class="experience-content">
-              This is a concise description of your previous work experience and the responsibilities you had. The most effective CVs give a clear snapshot of
-              where you’re coming from and where you’re going in a way that’s easy for readers to scan and absorb quickly.
-            </div>
-          </div>
-          <div class="experience-card">
-            <div class="experience-time">2021-12-01 ~ 2021-12-31</div>
-            <div class="experience-title">ASSOCIATE, VENALEE</div>
-            <div class="experience-content">
-              This is a concise description of your previous work experience and the responsibilities you had. The most effective CVs give a clear snapshot of
-              where you’re coming from and where you’re going in a way that’s easy for readers to scan and absorb quickly.
-            </div>
+          <div class="flex-1 flex justify-center flex-col p-12">
+            <img alt="avatar" src="@/assets/avatar.png" class="circle" />
           </div>
         </div>
       </section>
@@ -101,7 +82,7 @@
   </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section-content {
   min-height: 400px;
 }
@@ -120,9 +101,18 @@
   }
   .experience-content {
     @apply leading-7 grid gap-y-2;
-    // > p {
-    //   @apply
-    // }
+  }
+}
+.connect-item {
+  @apply flex items-center my-2;
+  Icon {
+    @apply text-2xl;
+  }
+  > .connect-item-value {
+    @apply ml-4 text-xl;
+    :hover {
+      color: var(--color-hint);
+    }
   }
 }
 </style>

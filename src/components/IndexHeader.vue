@@ -13,15 +13,16 @@ import { RouterLink } from "vue-router";
             <RouterLink to="/experience">Experience</RouterLink>
           </li>
           <li class="mx-2"><RouterLink to="/projects">Projects</RouterLink></li>
-          <li class="mx-2"><RouterLink to="/contact">Contact</RouterLink></li>
+          <!-- <li class="mx-2 social-link">
+            <a href="https://www.linkedin.com/in/leolin-48240bb0/" class="" target="_blank">LinkedIn</a>
+          </li> -->
           <li class="mx-2 social-link">
-            <a
-              href="https://www.linkedin.com/in/%E5%BA%AD%E5%BC%98-%E6%9E%97-48240bb0/"
-              class=""
-              target="_blank"
-              >LinkedIn</a
-            >
+            <a href="https://github.com/contemplator" target="_blank">Github</a>
           </li>
+          <li class="mx-2 social-link">
+            <a href="https://blog.hung.services/" target="_blank">Blog</a>
+          </li>
+          <li class="mx-2"><RouterLink to="/contact">Contact</RouterLink></li>
         </ul>
       </nav>
     </div>

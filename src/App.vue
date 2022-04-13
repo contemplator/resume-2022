@@ -14,7 +14,7 @@ const thisYear = ref(moment().year());
   <RouterView />
 
   <footer>
-    <div class="my-6 text-center">©{{ thisYear }} by Leo Lin</div>
+    <div class="mb-6 mt-12 text-center">©{{ thisYear }} by Leo Lin</div>
   </footer>
 </template>
 
