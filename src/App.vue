@@ -12,11 +12,6 @@ const RouteTitleEnum = {
   projects: "Projects",
   contact: "Contact",
 };
-// watch:{
-//     $route (to, from){
-//         this.show = false;
-//     }
-// }
 watch(
   () => route.name,
   async () => {
@@ -32,7 +27,7 @@ watch(
 </script>
 
 <template>
-  <header>
+  <header class="sticky top-0 z-10">
     <IndexHeader></IndexHeader>
   </header>
 

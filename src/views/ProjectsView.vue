@@ -3,7 +3,7 @@
     <div class="text-4xl mt-12 mb-4 uppercase text-center">Projects</div>
     <div class="text-xl mb-8 text-center">Portfolio</div>
     <section id="yun-his">
-      <div class="section-title">Yun HIS - 中國診所系統</div>
+      <div class="section-title">HIS - 中國診所系統</div>
       <div class="section-container">
         <div class="section-description">
           <div class="subtitle">使用技術</div>
@@ -38,7 +38,7 @@
       </div>
     </section>
     <section id="sound-manage">
-      <div class="section-title">Woolito 動畫工作室素材管理系統</div>
+      <div class="section-title">Woolito 素材管理系統</div>
       <div class="section-container">
         <div class="section-description">
           <div class="subtitle">專案背景介紹</div>
@@ -75,7 +75,7 @@
       </div>
     </section>
     <section id="yun-his">
-      <div class="section-title">Woolito 動畫工作室提案內容自動化</div>
+      <div class="section-title">Woolito 提案企劃自動化</div>
       <div class="section-container">
         <div class="section-description">
           <div class="subtitle">專案背景介紹</div>
@@ -152,10 +152,10 @@ section {
   @apply mt-12 mb-6;
 }
 .section-title {
-  @apply text-4xl mt-12 mb-4 uppercase text-center font-bold;
+  @apply text-2xl md:text-4xl mt-12 mb-4 uppercase text-center font-bold leading-7;
 }
 .section-container {
-  @apply flex bg-gray-700;
+  @apply md:flex bg-gray-700;
   > .section-description,
   > .section-image {
     @apply flex-1 p-8;
@@ -164,7 +164,7 @@ section {
 .section-description {
   @apply leading-7;
   .subtitle {
-    @apply text-2xl font-medium mb-2;
+    @apply text-xl md:text-2xl font-medium mb-2;
     &:not(:first-child) {
       @apply mt-4;
     }
@@ -178,7 +178,7 @@ section {
     @apply shadow-sm shadow-gray-200 border-0;
   }
   figcaption {
-    @apply mt-2 text-right;
+    @apply mt-2 md:text-right text-center;
     color: var(--color-hint);
   }
   figure:not(:first-child) {

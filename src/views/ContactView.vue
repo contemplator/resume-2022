@@ -4,7 +4,7 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <div class="max-w-6xl mx-auto">
-    <div class="flex bg-gray-700 section-content mt-8">
+    <div class="md:flex bg-gray-700 section-content mt-8">
       <div class="flex-1 flex justify-center flex-col p-8">
         <div class="connect-item text-3xl">
           <Icon icon="eva:email-outline" />
@@ -21,7 +21,7 @@ import { Icon } from "@iconify/vue";
           </div>
         </div>
       </div>
-      <div class="flex-1 flex justify-center flex-col p-12">
+      <div class="flex-1 flex justify-center flex-col px-12 pt-0 pb-12 md:pt-12">
         <img alt="avatar" src="@/assets/avatar.png" class="circle" />
       </div>
     </div>
@@ -32,10 +32,12 @@ import { Icon } from "@iconify/vue";
 .connect-item {
   @apply flex items-center my-2;
   Icon {
-    @apply text-2xl;
+    @apply text-lg md:text-2xl;
   }
   > .connect-item-value {
     @apply ml-4 text-xl;
+    max-width: 100%;
+    word-break: break-all;
     :hover {
       color: var(--color-hint);
     }
