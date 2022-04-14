@@ -38,6 +38,7 @@
   "soundManageTrail2": "Dropbox API 交易超時：實作同步功能時，或者查詢 Dropbox 內儲存的資料時，因為筆數過多導致交易超時，重新審視查詢條件以及在不同位置執行程式，來確保不會超時。",
   "soundManageImage1": "音效列表及檢視、播放音效功能",
   "soundManageImage2": "音效上傳功能",
+  "proposalManageTitle": "Woolito 提案企劃系統",
   "proposalManageBackground": "此功能需求是產生於動畫工作室近期商業提案企劃爆大量，未加入提案的速度，並且讓業主有別出心裁的感受，所以在尋求一種設計內容快速，並且設計玩內容後即產生提案企劃的方式。",
   "proposalSkill1": "前端使用 Angular 框架",
   "proposalSkill2": "後端使用 Nodejs 搭配 Express 框架",
