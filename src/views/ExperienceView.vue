@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="experience-card">
         <div class="experience-time">2017/11 ~ 2022/02</div>
-        <div class="experience-title">台灣徒弟素問科技 - 前端工程師</div>
+        <div class="experience-title">{{ t('tudiTitle') }}</div>
         <div class="experience-content">
           <p>主要負責網站所有介面及流程操作的功能開發，並參與網站功能設計及使用者訪談。必要時支援資料庫及伺服器的維運及問題排除。</p>
           <p>特殊經歷為參與中國醫療保險的功能設計與開發，必要時出差至當地進行系統開發及了解相關政策。</p>
@@ -50,3 +50,20 @@
   }
 }
 </style>
+<script setup>
+import { useI18n } from "vue-i18n";
+
+const { locale, t } = useI18n({
+  inheritLocale: true,
+});
+</script>
+<i18n>
+{
+  "zh-TW": {
+    "tudiTitle": "台灣素問科技 - 前端工程師",
+  },
+  "en": {
+    "tudiTitle": "Taiwan Suwen Technology - Frontend Engineer",
+  },
+}
+</i18n>

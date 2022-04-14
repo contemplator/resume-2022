@@ -14,10 +14,12 @@
   "dependencies": {
     "moment": "^2.29.2",
     "vue": "^3.2.31",
+    "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@iconify/vue": "^3.2.1",
+    "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@types/node": "^16.11.26",
     "@vitejs/plugin-vue": "^2.3.1",
