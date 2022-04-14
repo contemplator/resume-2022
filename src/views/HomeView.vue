@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import ContactView from "./ContactView.vue";
 import Experience from "./ExperienceView.vue";
+import { useI18n } from "vue-i18n";
+
+const { locale, t } = useI18n({
+  inheritLocale: true,
+});
 </script>
 
 <template>
@@ -12,8 +17,7 @@ import Experience from "./ExperienceView.vue";
             <div class="name uppercase text-center text-4xl md:text-6xl font-bold mb-8">Leo Lin</div>
             <div class="slogon text-center mb-8 text-xl">Explore and Enjoy</div>
             <div class="description text-left whitespace-normal md:px-12">
-              求學時主修資訊管理及數位內容，對於
-              IT、使用者習慣充滿興趣，勇於接受和了解當下流行和剛崛起的事物，偏好任務驅動的方式學習新的事物，訂下預期目標即全力完成。
+              {{ t("selfIntroduction") }}
             </div>
           </div>
           <div class="flex-1 personality-image p-8"></div>
