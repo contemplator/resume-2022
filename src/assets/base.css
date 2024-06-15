@@ -64,3 +64,15 @@ body {
 a:hover {
   color: var(--color-hint);
 }
+
+/* 列印模式 */
+@media print {
+  body {
+    background: var(--vt-c-white);
+    color: var(--vt-c-black);
+  }
+  header,
+  footer {
+    display: none;
+  }
+}

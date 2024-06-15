@@ -23,7 +23,7 @@ const { locale, t } = useI18n({
           </ol>
         </div>
       </div>
-      <div class="experience-card">
+      <div class="experience-card" style="page-break-after: always;">
         <div class="experience-time">2017/11 ~ 2022/02</div>
         <div class="experience-title">{{ t('tudiTitle') }}</div>
         <div class="experience-content">

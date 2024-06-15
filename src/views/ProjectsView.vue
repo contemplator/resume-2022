@@ -138,7 +138,7 @@ const { locale, t } = useI18n({
         </div>
       </div>
     </section>
-    <section id="yun-his">
+    <section id="proposal-manage">
       <div class="section-title">{{ t("proposalManageTitle") }}</div>
       <div class="section-container">
         <div class="section-description">
@@ -172,7 +172,7 @@ const { locale, t } = useI18n({
         </div>
       </div>
     </section>
-    <section id="yun-his">
+    <section id="group-buy">
       <div class="section-title">{{ t("groupbuyTitle") }}</div>
       <div class="section-container">
         <div class="section-description">
@@ -210,6 +210,9 @@ const { locale, t } = useI18n({
 <style lang="scss" scoped>
 section {
   @apply mt-12 mb-6;
+  &:not(:first-of-type) {
+    page-break-before: always;
+  }
 }
 .section-title {
   @apply text-2xl md:text-4xl mt-12 mb-4 uppercase text-center font-bold leading-7;
