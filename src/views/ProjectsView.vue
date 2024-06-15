@@ -9,6 +9,69 @@ const { locale, t } = useI18n({
   <div class="max-w-6xl mx-auto">
     <div class="text-4xl mt-12 mb-4 uppercase text-center">Projects</div>
     <div class="text-xl mb-8 text-center">Portfolio</div>
+    <section id="tdc-website">
+      <div class="section-title">TECHDesign 電商網站</div>
+      <div class="section-container">
+        <div class="section-description space-y-4">
+          <div>
+            <div class="subtitle">Central Build</div>
+            <p>
+              其目的為改善開發到產品階段不同部署環境的流程，減少重新部署所消耗的大量時間。
+            </p>
+            <p>成果：</p>
+            <ul>
+              <li>透過 Central Build 設計，減少 66% 的部署時間。</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="subtitle">Angular SSR Cache</div>
+            <p>
+              其目的為改善 Angular SSR
+              模式後，畫面渲染抖動及等候時間過長，使用者瀏覽體驗不佳。
+            </p>
+            <p>成果：</p>
+            <ul>
+              <li>瀏覽器分析 TTFB 時間從 560ms 改善為 320ms。</li>
+              <li>配合 Cache 模式，開發 Cache 清除及更新機制。</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="subtitle">Image Resize</div>
+            <p>為了增加網站效能，導入了 Image Resize 的概念。</p>
+            <p>成果：</p>
+            <ul>
+              <li>透過 Image Resize，減少圖片載入時間，提升網站效能。</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="subtitle">導入 CMS</div>
+            <p>為了提升網站維護效率，導入了 CMS 系統。</p>
+            <p>成果：</p>
+            <ul>
+              <li>透過 CMS 系統，提升網站維護效率。</li>
+              <li>結合 SSR Cache 及 CMS，提高分析網站評分。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-image">
+          <figure>
+            <img alt="index-preview" src="@/assets/tdc-01.png" />
+            <figcaption>首頁</figcaption>
+          </figure>
+          <!-- <figure>
+            <img alt="category-preview" src="@/assets/tdc-02.png" />
+            <figcaption>商品分類</figcaption>
+          </figure> -->
+          <figure>
+            <img alt="product-preview" src="@/assets/tdc-03.png" />
+            <figcaption>商品明細</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
     <section id="yun-his">
       <div class="section-title">{{ t("yunhisTitle") }}</div>
       <div class="section-container">
@@ -124,10 +187,8 @@ const { locale, t } = useI18n({
           <div class="subtitle">{{ t("projectTrail") }}</div>
           <div>
             <ul>
-              <li>{{ t("groupbuyTrail1") }}
-              </li>
-              <li>{{ t("groupbuyTrail2") }}
-              </li>
+              <li>{{ t("groupbuyTrail1") }}</li>
+              <li>{{ t("groupbuyTrail2") }}</li>
               <li>{{ t("groupbuyTrail3") }}</li>
             </ul>
           </div>
